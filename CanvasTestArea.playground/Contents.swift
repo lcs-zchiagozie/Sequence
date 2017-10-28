@@ -27,10 +27,15 @@ let canvas = Canvas(width: 500, height: 500)
 canvas.drawAxes()
 
 // Draw the ears
-canvas.drawEllipse(centreX: 150, centreY: 300, width: 100, height: 50)
-
-
-
+canvas.drawShapesWithBorders
+canvas.fillColor = Color.white
+canvas.drawEllipse(centreX: 250, centreY: 250, width: 245, height: 240)
+canvas.fillColor = Color.black
+canvas.rotate(by: 20)
+canvas.drawEllipse(centreX: 296, centreY: 267, width: 75, height: 80)
+canvas.rotate(by: 340)
+canvas.drawEllipse(centreX: 318, centreY: 348, width: 75, height: 80)
+canvas.drawEllipse(centreX: 250, centreY: 250, width: 50, height: 50)
 // This code is necessary to see the result in the Assistant Editor at right
 PlaygroundPage.current.liveView = canvas.imageView
 
